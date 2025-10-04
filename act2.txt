@@ -1,0 +1,68 @@
+void main() {
+  String temperatura = "Mitja";
+  String pluja = "Regular";
+  
+  switch (temperatura) {
+    case "Baixa":
+    case "Mitja":
+    case "Alta":
+      break;
+    default:
+      print("Clima desconegut");
+      return;
+  }
+  
+  switch (pluja) {
+    case "Nul·la":
+    case "Regular":
+    case "Abundosa":
+      break;
+    default:
+      print("Règim de pluges no definit");
+      return;
+  }
+  
+  switch (temperatura) {
+    case "Baixa":
+      switch (pluja) {
+        case "Nul·la":
+          print("Clima fred i sec");
+          break;
+        case "Regular":
+          print("Clima fred i amb pluges normals");
+          break;
+        case "Abundosa":
+          print("Clima fred i amb pluges normals");
+          break;
+      }
+      break;
+      
+    case "Mitja":
+      switch (pluja) {
+        case "Nul·la":
+          print("Clima temperat i sec");
+          break;
+        case "Regular":
+          print("Clima temperat i amb pluges normals");
+          break;
+        case "Abundosa":
+          print("Clima temperat i amb pluges normals");
+          break;
+      }
+      break;
+      
+    case "Alta":
+      switch (pluja) {
+        case "Nul·la":
+          print("Clima calorós i sec");
+          break;
+        case "Regular":
+          print("Clima calorós i amb pluges normals");
+          break;
+        case "Abundosa":
+          print("Clima calorós i amb pluges normals");
+          break;
+      }
+      break;
+  }
+}
